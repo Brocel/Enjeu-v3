@@ -1,0 +1,32 @@
+/*Host*/
+:host {
+  display: block;
+  border: 1px solid red;
+  height:100%;
+  background-image: url("src/assets/img/background/bg02.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+/*Grille*/
+.grilleHome {
+  display: grid;
+  align-items: center;
+  height: 100%;
+  width:100%;
+  padding: 1%;
+  grid-gap: 1%;
+  grid-template-columns: 1fr ;
+  grid-template-rows: 1fr 3fr;
+  grid-template-areas:
+  "ban"
+  "feats";
+}
+.ban {
+  grid-area: ban;
+  justify-content: center;
+}
+.feats {
+  grid-area: feats;
+  justify-content: center;
+}
