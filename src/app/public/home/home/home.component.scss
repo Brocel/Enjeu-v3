@@ -14,17 +14,21 @@
   align-items: center;
   padding: 1%;
   grid-gap: 1%;
-  grid-template-columns: 1fr ;
+  grid-template-columns: repeat(2,0.5fr) ;
   grid-template-rows: 1fr 2fr;
   grid-template-areas:
-  "ban"
-  "feats";
+  "ban ban"
+  "feat1 feat2";
 }
 .ban {
   grid-area: ban;
   justify-content: center;
 }
-.feats {
-  grid-area: feats;
+.feat1 {
+  grid-area: feat1;
+  justify-content: center;
+}
+.feat2 {
+  grid-area: feat2;
   justify-content: center;
 }
