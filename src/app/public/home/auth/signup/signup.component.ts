@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { FormGroup, FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 import { AuthService } from 'src/app/core/services/auth.service';
 import { Router } from '@angular/router';
 
@@ -34,7 +34,7 @@ export class SignupComponent implements OnInit {
 
     this.authService.createNewUser(email, password).then(
       () => {
-        this.router.navigate(['/books']);
+        this.router.navigate(['/protected/table-jeu']);
       },
       (error) => {
         this.errorMessage = error;

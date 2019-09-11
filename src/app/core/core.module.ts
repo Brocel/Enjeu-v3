@@ -1,6 +1,5 @@
 import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { FormsModule } from  '@angular/forms';
-import { ReactiveFormsModule } from  '@angular/forms';
 import { HttpClientModule } from  '@angular/common/http';
 
 import { SharedModule } from 'src/app/shared/shared.module';
@@ -18,7 +17,6 @@ import * as firebase from 'firebase';
   declarations: [],
   imports: [
     FormsModule,
-    ReactiveFormsModule,
     HttpClientModule,
     SharedModule,
     PublicModule,
