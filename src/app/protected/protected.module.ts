@@ -7,10 +7,11 @@ import { CreationPersonnageComponent } from './personnages/creation-personnage/c
 import { MdjListComponent } from './mdj-list/mdj-list.component';
 import { SingleMdjComponent } from './mdj-list/single-mdj/single-mdj.component';
 import { GameConfigComponent } from './mdj-list/game-config/game-config.component';
+import { TableJeuComponent } from './table-jeu/table-jeu.component';
 
 
 @NgModule({
-  declarations: [PersonnagesComponent, PersonnageComponent, CreationPersonnageComponent, MdjListComponent, SingleMdjComponent, GameConfigComponent],
+  declarations: [PersonnagesComponent, PersonnageComponent, CreationPersonnageComponent, MdjListComponent, SingleMdjComponent, GameConfigComponent, TableJeuComponent],
   imports: [
     SharedModule,
     ProtectedRoutingModule
