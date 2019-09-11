@@ -16,9 +16,9 @@ export class Personnage {
   taille: number; // en cm
   masse: number; // en kg
   age: number; // en années
-  readonly for: number, //force physique du personnage
-  readonly def: number, //résistance physique/endurance du personnage
-  readonly int: number, //force/résistance mentale / charisme du personnage
+  readonly for: number; //force physique du personnage
+  readonly def: number; //résistance physique/endurance du personnage
+  readonly int: number; //force/résistance mentale / charisme du personnage
   // Autres
   inventaire: string; //objets portés
   readonly exp: number; // expérience du personnage
