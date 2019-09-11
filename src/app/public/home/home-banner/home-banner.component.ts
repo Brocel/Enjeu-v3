@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'enjeu-home-banner',
+  selector: 'app-home-banner',
   templateUrl: './home-banner.component.html',
   styleUrls: ['./home-banner.component.scss']
 })
