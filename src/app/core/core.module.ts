@@ -1,5 +1,4 @@
-import { NgModule, Optional, SkipSelf } from '@angular/core';
-import { FormsModule } from  '@angular/forms';
+import { NgModule } from '@angular/core';
 import { HttpClientModule } from  '@angular/common/http';
 
 import { SharedModule } from 'src/app/shared/shared.module';
@@ -16,8 +15,6 @@ import * as firebase from 'firebase';
 @NgModule({
   declarations: [],
   imports: [
-    FormsModule,
-    HttpClientModule,
     SharedModule,
     PublicModule,
     ProtectedModule
@@ -33,11 +30,8 @@ import * as firebase from 'firebase';
 })
 export class CoreModule {
   //Importer le core uniquement dans app.module
-  constructor(@Optional() @SkipSelf() parentModule: CoreModule) {
-   if (parentModule) {
-    throw new Error('CoreModule is already loaded.');
-  } else {
-      // Your web app's Firebase configuration
+  constructor() {
+         // Your web app's Firebase configuration
     var firebaseConfig = {
       apiKey: "AIzaSyD9fkuj-4-V9B3Qe2c3TpU5LKIAK8NxkWY",
       authDomain: "enjeu-v3.firebaseapp.com",
@@ -50,5 +44,4 @@ export class CoreModule {
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
   }
-}
 }
